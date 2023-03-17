@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="nav.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lobster&family=Satisfy&display=swap"
+    />
+    <script>
+      src="https://kit.fontawesome.com/a752a5c797.js"
+      crossorigin="anonymous"
+    </script>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <script src="https://kit.fontawesome.com/a752a5c797.js" crossorigin="anonymous"></script>
+    <title>Ikea - Home Decor</title>
+
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+  <header>
+    <nav id="nav">
+      <div class="logo">I<span>KEA</span></div>
+      <div class="tabs">
+        <a href="index.html" class="ni">HOME</a>
+        <div class="dot"></div>
+        <a href="AboutUs.html" class="ni">ABOUT</a>
+        <div class="dot"></div>
+        <a href="our_services.html" class="active">SERVICES</a>
+        <div class="dot"></div>
+        <a href="contact.html" class="ni">CONTACT</a>
+        <div class="mobile-buttons">
+          <a href="javascript:void(0)" class="flex open" onclick="openNav()"
+            >&#9662;</a
+          >
+          <a
+            href="javascript:void(0)"
+            class="hidden close"
+            onclick="closeNav()"
+            >&#9652;</a
+          >
+        </div>
+      </div>
+    </nav>
+  </header>
+          <main>
+            <section id="services">
+              <h2>Our Services</h2>
+              <div class="container1">
+              <div class="image1">
+                <img src="roberto-nickson-tleCJiDOri0-unsplash.jpg" alt="Service 1">
+              </div>
+              <div class="residential">     
+                <h3>Residential Interior Design</h3>
+                <p>We can provide a consultation to clients who are looking to renovate or build a new home. The designers will meet with the clients to discuss their vision and objectives.</p>
+                <p>We can also provide project management service to ensur that the design and construction process runs smoothly and efficiently.</p>
+                <p>We can help the client to make the most of their space by providing a professional assessment and design plan for their home.</p>
+              </div>
+              </div>  
+              <div class="line1"></div>
+               <div class="container2">
+                <div class="commercial">
+                  <h3>Commercial Interior Design</h3>
+                  <p>We can provide a consultation to clients who are looking to renovate or build a new home. The designers will meet with the clients to discuss their vision and objectives.</p>
+                  <p>We can also provide project management service to ensur that the design and construction process runs smoothly and efficiently.</p>
+                  <p>We can help the client to make the most of their space by providing a professional assessment and design plan for their home.</p>
+                </div>
+                <div class="image2">
+                  <img src="pexels-rachel-claire-4577179.jpg" alt="">
+                </div>
+               </div>
+               <div class="line2"></div>
+               <div class="container3">
+                <div class="image3"><img align="left" src="pexels-kris-lucas-2514103.jpg" alt=""></div>
+                <div class="decorating">
+                  <h3>Interior Decorating</h3>
+                  <p>We can provide a consultation to clients who are looking to renovate or build a new home. The designers will meet with the clients to discuss their vision and objectives.</p>
+                  <p>We can also provide project management service to ensur that the design and construction process runs smoothly and efficiently.</p>
+                  <p>We can help the client to make the most of their space by providing a professional assessment and design plan for their home.</p>
+                </div>
+               </div>
+            </section>
+            <footer>
+              <div class="line"></div>
+              <div class="social">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" id="chat"><i class="fa fa-comments" aria-hidden="true"></i></a>
+              </div>
+              <div class="foottext">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nisi neque earum quasi, vel non nemo rerum
+                  sit id nam consectetur harum deserunt quisquam explicabo, dicta ullam nulla hic consequuntur cumque. Totam
+                  eveniet necessitatibus aliquid commodi similique tempora quibusdam eos?
+              </div>
+              <p class="footnote">&copy; 2023 Interior Design Website. All rights reserved.</p>
+          </footer>
+          <script>
+
+            function closeButtons() {
+                // show open
+                document.querySelector(".open").classList.remove("hidden");
+                document.querySelector(".open").classList.add("flex");
+                // hide close
+                document.querySelector(".close").classList.remove("flex");
+                document.querySelector(".close").classList.add("hidden");
+            }
+    
+            window.addEventListener("resize", function () {
+                var elems = document.getElementsByClassName("ni");
+                if (window.innerWidth > 502) {
+                    for (var i = 0; i < elems.length; i += 1) {
+                        elems[i].style.display = "flex";
+                    }
+                    closeButtons();
+                } else {
+                    for (var i = 0; i < elems.length; i += 1) {
+                        elems[i].style.display = "none";
+                    }
+                }
+            });
+    
+            function closeNav() {
+                var elems = document.getElementsByClassName("ni");
+                for (var i = 0; i < elems.length; i += 1) {
+                    elems[i].style.display = "none";
+                }
+                // document.getElementsByClassName('tabs').style.display = 'none';
+                closeButtons();
+            }
+    
+            function openNav() {
+                var elems = document.getElementsByClassName("ni");
+                for (var i = 0; i < elems.length; i += 1) {
+                    elems[i].style.display = "flex";
+                }
+                // document.getElementsByClassName('tabs').style.display = 'flex';
+                // hide open
+                document.querySelector(".open").classList.add("hidden");
+                document.querySelector(".open").classList.remove("flex");
+                // show close
+                document.querySelector(".close").classList.add("flex");
+                document.querySelector(".close").classList.remove("hidden");
+            }
+        </script>
+        </body>
+</html>

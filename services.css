@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; 
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Main */
+
+#head h2{
+    font-size: 36px;
+    margin-top: 17px;
+    text-align: center;
+    color: #e8bc1e;
+}
+/* Services Section */
+#services{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#services h2{
+  color: #e8bc1e;
+  font-size: 50px;
+  margin-top: 100px;
+}
+.container1{
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  height: 40vw;
+}
+#services img{
+  border-radius: 8px;
+    width: 50vw;
+    display: block;
+    height: auto;
+}
+.residential h3{
+  font-size: 2vw;
+  margin-left: 8%;
+  color: #e8bc1e;
+}
+.residential{
+  margin: 0px;
+}
+.residential p{
+  margin-left: 8%;
+  font-size: 1vw;
+  color: white;
+}
+.line1{
+  height: 0px;
+    width: 80%;
+    border: 0.5px solid rgb(98, 98, 98);
+    margin: 30px 0px;
+}
+/* commercial section */
+.container2{
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 40vw;
+}
+.image2{
+  border-radius: 8px;
+  width: 60vw;
+  display: block;
+}
+.commercial h3
+{
+  font-size: 2vw;
+  margin-left: 8%;
+  color: #e8bc1e;
+}
+.commercial p{
+  margin-left: 8%;
+  font-size: 1vw;
+  color: white;
+}
+.line2{
+  height: 0px;
+    width: 80%;
+    border: 0.5px solid rgb(98, 98, 98);
+    margin: 30px 0px;
+}
+.container3{
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 40vw;
+}
+.image3{
+  border-radius: 8px;
+    width: 60vw;
+    display: block;
+    height: auto;
+}
+.decorating h3{
+  font-size: 2vw;
+  margin-left: 8%;
+  color: #e8bc1e;
+}
+.decorating p{
+  margin-left: 8%;
+  font-size: 1vw;
+  color: white;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footnote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e8bc1e;
+  font-size: 10px;
+  width: 80%;
+  margin: 10px;
+}
+footer .foottext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  text-align: center;
+  color: #555555;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.line {
+  width: 70%;
+  height: 0;
+  border-top: 1px solid white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 20px;
+}
+
+.social a {
+  color: white;
+  margin: 25px 15px;
+}
+
+.social a:hover {
+  color: #e8bc1e;
+}
+
+.social:active {
+  color: white;
+}
+.mobile-buttons {
+  display: none;
+}
+@media screen and (min-width: 801px) {
+  #services h2{
+    font-size: 70px;
+  }
+  .residential h3{
+    font-size: 2.2vw;
+    margin-left: 8%;
+  }
+  .residential p{
+    margin-left: 8%;
+    font-size: 1.4vw;
+  }
+  .commercial h3
+{
+  font-size: 2.4vw;
+  margin-left: 8%;
+}
+.commercial p{
+  margin-left: 8%;
+  font-size: 1.4vw;
+}
+.decorating h3{
+  font-size: 2.2vw;
+  margin-left: 8%;
+}
+.decorating p{
+  margin-left: 8%;
+  font-size: 1.4vw;
+}
+}
+@media screen and (max-width: 800px) {
+  #services h2{
+    font-size: 40px;
+  }
+  #services img{
+      width: 40vw;
+  }
+  .residential h3{
+    font-size: 2.6vw;
+    margin-left: 8%;
+  }
+  .residential p{
+    margin-left: 8%;
+    font-size: 1.8vw;
+  }
+  .image2{
+    border-radius: 8px;
+    width: 50vw;
+  }
+  .commercial h3
+{
+  font-size: 2.6vw;
+  margin-left: 8%;
+}
+.commercial p{
+  margin-left: 8%;
+  font-size: 1.8vw;
+}
+.image3{
+  border-radius: 8px;
+    width: 50vw;
+    display: block;
+}
+.decorating h3{
+  font-size: 2.6vw;
+  margin-left: 8%;
+}
+.decorating p{
+  margin-left: 8%;
+  font-size: 2.4vw;
+}
+@media screen and (max-width:520px) {
+  #services h2{
+    font-size: 50px;
+  }
+  #services img{
+      width: 50vw;
+  }
+  .residential h3{
+    font-size: 3vw;
+    margin-left: 8%;
+  }
+  .residential p{
+    margin-left: 8%;
+    font-size: 2.4vw;
+  }
+  .image2{
+    border-radius: 8px;
+    width: 50vw;
+  }
+  .commercial h3
+{
+  font-size: 3vw;
+  margin-left: 8%;
+}
+.commercial p{
+  margin-left: 8%;
+  font-size: 2.4vw;
+}
+.image3{
+  border-radius: 8px;
+    width: 50vw;
+    display: block;
+}
+.decorating h3{
+  font-size: 3vw;
+  margin-left: 8%;
+}
+.decorating p{
+  margin-left: 8%;
+  font-size: 2.4vw;
+}
+}
+}

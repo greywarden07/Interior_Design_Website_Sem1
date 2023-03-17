@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="icon" href="home.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Exo+2&family=Lobster&family=Satisfy&display=swap">
+    <script src="https://kit.fontawesome.com/a752a5c797.js" crossorigin="anonymous"></script>
+    <title>Ikea - Home Decor</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">I<span>KEA</span></div>
+            <div class="tabs">
+                <a href="index.html" class="active">HOME</a>
+                <div class="dot"></div>
+                <a href="AboutUs.html" class="ni">ABOUT US</a>
+                <div class="dot"></div>
+                <a href="#" class="ni">SERVICES</a>
+                <div class="dot"></div>
+                <a href="contact.html" class="ni">CONTACT</a>
+                <div class="mobile-buttons">
+                    <a href="javascript:void(0)" class="flex open" onclick="openNav()">&#9662;</a>
+                    <a href="javascript:void(0)" class="hidden close" onclick="closeNav()">&#9652;</a>
+                </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome to our Interior Design Website</h1>
+            <p>We offer top-quality interior design services for both residential and commercial spaces.</p>
+            <a href="javascript:void(0)" class="button" onclick="openPortf()">Learn More</a>
+        </section>
+        <section class="portfolio hide">
+            <h2>Portfolio</h2>
+            <div class="project1">
+                <div class="imgcontainer1">
+                    <img src="point3d-commercial-imaging-ltd-YUeWruccqr4-unsplash.jpg" alt="project 1">
+                </div>
+                <div class="p1-info">
+                    <h3><span>P</span>roject 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta a iure totam debitis facere dolores rerum ex recusandae in.
+                    </p>
+                </div>
+            </div>
+            <div class="l1"></div>
+            <div class="project2">
+                <div class="p2-info">
+                    <h3><span>P</span>roject 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta a iure totam debitis facere dolores rerum ex recusandae in.
+                    </p>
+                </div>
+                <div class="imgcontainer2">
+                    <img src="point3d-commercial-imaging-ltd-YUeWruccqr4-unsplash.jpg" alt="project 2">
+                </div>
+            </div>
+            <div class="l1"></div>
+            <div class="project1">
+                <div class="imgcontainer1">
+                    <img src="point3d-commercial-imaging-ltd-YUeWruccqr4-unsplash.jpg" alt="project 1">
+                </div>
+                <div class="p1-info">
+                    <h3><span>P</span>roject 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta a iure totam debitis facere dolores rerum ex recusandae in.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="line"></div>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#" id="chat"><i class="fa fa-comments" aria-hidden="true"></i></a>
+        </div>
+        <div class="foottext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nisi neque earum quasi, vel non nemo rerum
+            sit id nam consectetur harum deserunt quisquam explicabo, dicta ullam nulla hic consequuntur cumque. Totam
+            eveniet necessitatibus aliquid commodi similique tempora quibusdam eos?
+        </div>
+        <p class="footnote">&copy; 2023 Interior Design Website. All rights reserved.</p>
+    </footer>
+    <script>
+        function openPortf(){
+            document.querySelector(".portfolio").classList.remove("hide");
+            document.querySelector(".portfolio").classList.add("show");
+        }
+        function closeButtons() {
+            // show open
+            document.querySelector(".open").classList.remove("hidden");
+            document.querySelector(".open").classList.add("flex");
+            // hide close
+            document.querySelector(".close").classList.remove("flex");
+            document.querySelector(".close").classList.add("hidden");
+        }
+
+        window.addEventListener("resize", function () {
+            var elems = document.getElementsByClassName("ni");
+            if (window.innerWidth >= 538) {
+                for (var i = 0; i < elems.length; i += 1) {
+                    elems[i].style.display = "flex";
+                }
+                closeButtons();
+            } else {
+                for (var i = 0; i < elems.length; i += 1) {
+                    elems[i].style.display = "none";
+                }
+            }
+        });
+
+        function closeNav() {
+            var elems = document.getElementsByClassName("ni");
+            for (var i = 0; i < elems.length; i += 1) {
+                elems[i].style.display = "none";
+            }
+            // document.getElementsByClassName('tabs').style.display = 'none';
+            closeButtons();
+        }
+
+        function openNav() {
+            var elems = document.getElementsByClassName("ni");
+            for (var i = 0; i < elems.length; i += 1) {
+                elems[i].style.display = "flex";
+            }
+            // document.getElementsByClassName('tabs').style.display = 'flex';
+            // hide open
+            document.querySelector(".open").classList.add("hidden");
+            document.querySelector(".open").classList.remove("flex");
+            // show close
+            document.querySelector(".close").classList.add("flex");
+            document.querySelector(".close").classList.remove("hidden");
+        }
+    </script>
+</body>
+
+</html>
